@@ -20,7 +20,6 @@ regioncounter = solutions.RegionCounter(
     line_width=1,
     tracker='bytetrack.yaml',
     conf=0.5
-
 )
 def process_frame(worker, frame):
     results = worker(frame)
