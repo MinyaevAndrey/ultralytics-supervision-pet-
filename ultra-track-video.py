@@ -6,7 +6,7 @@ def process_frame(frame):
     results = model.track(frame,
                           persist=True,
                           verbose=False)
-    
+
     cv2.imshow("YOLO11 Tracking", results[0].plot())
 
 cap = cv2.VideoCapture("output.mp4")
@@ -23,3 +23,5 @@ while cap.isOpened():
 # Release the video capture object and close the display window
 cap.release()
 cv2.destroyAllWindows()
+
+##
